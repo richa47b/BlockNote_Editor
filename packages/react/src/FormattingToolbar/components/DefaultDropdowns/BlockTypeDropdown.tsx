@@ -95,6 +95,7 @@ export const BlockTypeDropdown = <BSchema extends BlockSchema>(props: {
           icon: RiListUnordered,
           isSelected: block.type === "bulletListItem",
         },
+
         {
           onClick: () => {
             props.editor.focus();

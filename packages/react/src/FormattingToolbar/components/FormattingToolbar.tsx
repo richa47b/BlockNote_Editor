@@ -9,6 +9,7 @@ import {
 import { TextAlignButton } from "./DefaultButtons/TextAlignButton";
 import { ToggledStyleButton } from "./DefaultButtons/ToggledStyleButton";
 import { BlockTypeDropdown } from "./DefaultDropdowns/BlockTypeDropdown";
+import { AiPrompt } from "./DefaultButtons/AIPrompt";
 
 export const FormattingToolbar = <BSchema extends BlockSchema>(props: {
   editor: BlockNoteEditor<BSchema>;
@@ -32,6 +33,7 @@ export const FormattingToolbar = <BSchema extends BlockSchema>(props: {
       <UnnestBlockButton editor={props.editor} />
 
       <CreateLinkButton editor={props.editor} />
+      <AiPrompt editor={props.editor} />
     </Toolbar>
   );
 };

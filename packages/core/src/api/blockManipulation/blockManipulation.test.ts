@@ -66,6 +66,22 @@ beforeEach(() => {
         },
       ],
     },
+    {
+      type: "heading",
+      props: {
+        level: "3",
+      },
+      content: "AI Prompt",
+      children: [
+        {
+          type: "heading",
+          props: {
+            level: "2",
+          },
+          content: "Nested AI Prompt",
+        },
+      ],
+    },
   ];
 
   insert = (placement) => {

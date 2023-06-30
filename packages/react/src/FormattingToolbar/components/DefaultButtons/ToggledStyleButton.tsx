@@ -30,7 +30,6 @@ export const ToggledStyleButton = <BSchema extends BlockSchema>(props: {
   editor: BlockNoteEditor<BSchema>;
   toggledStyle: ToggledStyle;
 }) => {
-
   const toggleStyle = (style: ToggledStyle) => {
     props.editor.focus();
     props.editor.toggleStyles({ [style]: true });

@@ -10,6 +10,7 @@ import {
   RiListOrdered,
   RiListUnordered,
   RiText,
+  RiLightbulbFlashLine,
 } from "react-icons/ri";
 import { formatKeyboardShortcut } from "../utils";
 import { ReactSlashMenuItem } from "./ReactSlashMenuItem";
@@ -33,11 +34,18 @@ const extraFields: Record<
     hint: "Used for key sections",
     shortcut: formatKeyboardShortcut("Mod-Alt-2"),
   },
+
   "Heading 3": {
     group: "Headings",
     icon: <RiH3 size={18} />,
     hint: "Used for subsections and group headings",
     shortcut: formatKeyboardShortcut("Mod-Alt-3"),
+  },
+  "AI Prompt": {
+    group: "Headings",
+    icon: <RiLightbulbFlashLine size={18} />,
+    hint: "Generate AI prompt",
+    shortcut: formatKeyboardShortcut("Mod-Alt-4"),
   },
   "Numbered List": {
     group: "Basic blocks",

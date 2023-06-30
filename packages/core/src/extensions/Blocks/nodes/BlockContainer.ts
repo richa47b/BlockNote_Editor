@@ -564,6 +564,13 @@ export const BlockContainer = Node.create<IBlock>({
             level: "3",
           },
         }),
+      "Mod-Alt-4": () =>
+        this.editor.commands.BNUpdateBlock(this.editor.state.selection.anchor, {
+          type: "heading",
+          props: {
+            level: "3",
+          },
+        }),
       "Mod-Shift-7": () =>
         this.editor.commands.BNUpdateBlock(this.editor.state.selection.anchor, {
           type: "bulletListItem",

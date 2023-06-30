@@ -618,6 +618,63 @@ Paragraph
       ],
       children: [],
     },
+    //
+    {
+      id: UniqueID.options.generateID(),
+      type: "heading",
+      props: {
+        backgroundColor: "red",
+        textColor: "yellow",
+        textAlignment: "right",
+        level: "3",
+      },
+      content: [
+        {
+          type: "text",
+          text: "Heading 1",
+          styles: {},
+        },
+      ],
+      children: [
+        {
+          id: UniqueID.options.generateID(),
+          type: "heading",
+          props: {
+            backgroundColor: "orange",
+            textColor: "orange",
+            textAlignment: "center",
+            level: "2",
+          },
+          content: [
+            {
+              type: "text",
+              text: "AI Prompt",
+              styles: {},
+            },
+          ],
+          children: [
+            {
+              id: UniqueID.options.generateID(),
+              type: "heading",
+              props: {
+                backgroundColor: "yellow",
+                textColor: "red",
+                textAlignment: "left",
+                level: "3",
+              },
+              content: [
+                {
+                  type: "text",
+                  text: "Heading 3",
+                  styles: {},
+                },
+              ],
+              children: [],
+            },
+          ],
+        },
+      ],
+    },
   ];
 
   // complexHTML = `<h1>Heading 1</h1><h2>Heading 2</h2><h3>Heading 3</h3><p><span data-text-color="purple"><span data-background-color="green">Paragraph</span></span></p><p>P<strong>ara</strong><em>grap</em>h</p><p>P<u>ara</u><s>grap</s>h</p><ul><li><p>Bullet List Item</p></li><li><p>Bullet List Item</p><ul><li><p>Bullet List Item</p><ul><li><p>Bullet List Item</p></li></ul><p>Paragraph</p><ol><li><p>Numbered List Item</p></li><li><p>Numbered List Item</p></li><li><p>Numbered List Item</p><ol><li><p>Numbered List Item</p></li></ol></li></ol><ul><li><p>Bullet List Item</p></li></ul></li><li><p>Bullet List Item</p></li></ul></li><li><p>Bullet List Item</p></li></ul>`;

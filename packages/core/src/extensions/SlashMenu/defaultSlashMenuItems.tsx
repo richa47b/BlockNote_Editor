@@ -47,15 +47,6 @@ export const defaultSlashMenuItems = [
       }),
     ["h2", "heading2", "subheading"]
   ),
-  new BaseSlashMenuItem<DefaultBlockSchema>(
-    "Heading 2",
-    (editor) =>
-      insertOrUpdateBlock(editor, {
-        type: "heading",
-        props: { level: "2" },
-      }),
-    ["h2", "heading2", "subheading"]
-  ),
 
   // Command for creating a level 3 heading
   new BaseSlashMenuItem<DefaultBlockSchema>(
@@ -66,6 +57,15 @@ export const defaultSlashMenuItems = [
         props: { level: "3" },
       }),
     ["h3", "heading3", "subheading"]
+  ),
+  new BaseSlashMenuItem<DefaultBlockSchema>(
+    "AI Prompt",
+    (editor) =>
+      insertOrUpdateBlock(editor, {
+        type: "heading",
+        props: { level: "2" },
+      }),
+    ["h2", "heading2", "subheading"]
   ),
 
   // Command for creating an ordered list
